@@ -1,0 +1,22 @@
+// Sample code - Input / Output shifting
+//
+// in Mano Machine Assembly
+//
+// author: Nathan Huffman
+// version: 1.0 - April 28, 2019
+
+//----------------------------------------
+
+// Takes in an ACII character, shifts it +2, then outputs result
+
+      ORG 10    // start defining code from memory address 10
+LOOP, SKI       // look for input, skip next line if found        [ wait for input,   ]
+      BUN LOOP  //       if no input -> loop back to check again  [ like a while loop ]
+      CLA       // clear accumulator, prep for input
+      INP       // grab input value and store in AC               [ ASCII char -> AC ]
+      ADD TWO   // add TWO (point to decimal value of 2) to shift ASCII
+      OUT       // output AC result (shifted character)           [ AC -> ASCII char ]
+      HLT       // quit, stopping running
+
+TWO,  DEC 02    // define decimal number 2, used for shift        [ declare variable ]
+      END       // end, write everything above this

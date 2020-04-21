@@ -1,4 +1,4 @@
-// Sample code - input, output, if statements, loops
+// Sample code - Input / Output shifting
 //
 // in Mano Machine Assembly
 //
